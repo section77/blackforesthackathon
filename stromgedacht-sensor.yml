@@ -1,0 +1,15 @@
+sensor:
+  - platform: rest
+    resource: https://api.stromgedacht.de/v1/now?zip=79110
+    name: Stromgedacht Status
+    json_attributes: 
+      - state
+    value_template: >
+      {% set mapper = {
+          1: "Grün",
+          3: "Orange",
+          4: "Rot",
+          -1: "SuperGrün",
+      } %}
+      {% set state = value_json.state %}
+      {{ mapper[state] if state in mapper else state }}
