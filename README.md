@@ -23,4 +23,5 @@ tools
 hardware for prosumers:
 - Rasperry Pi
 - Radio-controlled sockets
+- Volkszähler
 
