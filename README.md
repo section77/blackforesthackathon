@@ -4,12 +4,18 @@ Repo for Code and Docs around the #blackforesthackathon 2025
 documentation
 - [general](https://balkon.solar/dateien)
 - HomeAssistant specific
+  - how to install integration Forecast.Solar
+    - log into home assistant
+    - Settings
+    - Devices & services
+    - Add integration
+    - Search "Forecast.Solar"
   - [how to generate a long lived access token](https://community.home-assistant.io/t/how-to-get-long-lived-access-token/162159)
     - log into home assistant
     - click on your profile icon on the bottom left
     - click on the tab "Security"
-    - section: long lived access tokens
-    - generate token
+    - section: "Long-lived access tokens"
+    - create token
 
 tools
 - [HomeAssistant](https://www.home-assistant.io/)
@@ -20,8 +26,7 @@ tools
 - [Solar energy prediction](https://openweathermap.org/api/solar-energy-prediction)
 - [Meteoblue API](https://content.meteoblue.com/de/unternehmensloesungen/wetter-apis)
 
-hardware for prosumers:
+hardware for prosumers
 - Rasperry Pi
 - Radio-controlled sockets
-- Volkszähler
-
+- [Optical Readout Head for Smartmeter](https://www.ebay.de/sch/i.html?_nkw=hichi&_odkw=hitchi)
