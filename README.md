@@ -63,7 +63,8 @@ MVP
 
 future improvements
 - create a more generic solution, that is independent of HomeAssistant
-- use more APIs for deciding where to direct the energy flow ([OpenEMS](https://openems.io/), [Grünstromindex](https://gruenstromindex.de/assets/js/))
+- use APIs that provide a CO2 index and enery flow like [Grünstromindex](https://gruenstromindex.de/assets/js/)(prfered) or [Energy Charts](https://energy-charts.info/api.html?l=de&c=DE)
+- Add more sophisticated prediction model e.g. AC charging, forcast with nonlinear-optimization algorithem and intraday optimization.  
 
 Hurdles
 - access to the ecoflow api
