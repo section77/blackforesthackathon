@@ -63,6 +63,7 @@ MVP
 
 future improvements
 - create a more generic solution, that is independent of HomeAssistant
+- use more APIs for deciding where to direct the energy flow ([OpenEMS](https://openems.io/), [Grünstromindex](https://gruenstromindex.de/assets/js/))
 
 Hurdles
 - access to the ecoflow api
