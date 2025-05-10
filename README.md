@@ -16,19 +16,19 @@ documentation
         - add "python_script:"
         - create the folder <config>/python_scripts
         - Create a file <config>/python_scripts/hello_world.py in the folder and give it this content:
-```Python
-# `data` is available as builtin and is a dictionary with the input data.
-name = data.get("name", "world")
-# `logger` and `time` are available as builtin without the need of explicit import.
-logger.info("Hello {} at {}".format(name, time.time()))
-```
+            ```Python
+            # `data` is available as builtin and is a dictionary with the input data.
+            name = data.get("name", "world")
+            # `logger` and `time` are available as builtin without the need of explicit import.
+            logger.info("Hello {} at {}".format(name, time.time()))
+            ```
         - Start Home Assistant to reload the script configuration.
         - Call your new python_script.hello_world action (with parameters) from the Actions, using the YAML mode.
-```YAML
-action: python_script.hello_world
-data:
-  name: "Input-Text"
-```
+            ```YAML
+            action: python_script.hello_world
+            data:
+            name: "Input-Text"
+            ```
   - [how to generate a long lived access token](https://community.home-assistant.io/t/how-to-get-long-lived-access-token/162159)
     - log into HomeAssistant
     - click on your profile icon on the bottom left
