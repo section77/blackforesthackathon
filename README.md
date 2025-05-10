@@ -67,3 +67,5 @@ future improvements
 
 Hurdles
 - access to the ecoflow api
+  - requires a developer account; activation takes a few days
+  - registration is tricky (codes valid for 1 minute only, mail takes around 1 minute)
