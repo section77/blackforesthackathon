@@ -4,12 +4,31 @@ Repo for Code and Docs around the #blackforesthackathon 2025
 documentation
 - [general](https://balkon.solar/dateien)
 - HomeAssistant specific
-  - how to install integration Forecast.Solar
-    - log into HomeAssistant
-    - Settings
-    - Devices & services
-    - Add integration
-    - Search "Forecast.Solar"
+  - how to install integrations
+    - integration "Forecast.Solar"
+        - log into HomeAssistant
+        - Settings
+        - Devices & services
+        - Add integration
+        - Search "Forecast.Solar"
+    - [integration "Python Scripts"](https://www.home-assistant.io/integrations/python_script)
+        - edit your configuration.yaml
+        - add "python_script:"
+        - create the folder <config>/python_scripts
+        - Create a file <config>/python_scripts/hello_world.py in the folder and give it this content:
+```Python
+# `data` is available as builtin and is a dictionary with the input data.
+name = data.get("name", "world")
+# `logger` and `time` are available as builtin without the need of explicit import.
+logger.info("Hello {} at {}".format(name, time.time()))
+```
+        - Start Home Assistant to reload the script configuration.
+        - Call your new python_script.hello_world action (with parameters) from the Actions, using the YAML mode.
+```YAML
+action: python_script.hello_world
+data:
+  name: "Input-Text"
+```
   - [how to generate a long lived access token](https://community.home-assistant.io/t/how-to-get-long-lived-access-token/162159)
     - log into HomeAssistant
     - click on your profile icon on the bottom left
