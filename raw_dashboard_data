@@ -1,0 +1,149 @@
+views:
+  - title: Home
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
+            heading: Haushalt
+          - type: custom:power-flow-card-plus
+            entities:
+              battery:
+                entity:
+                  '0': s
+                  '1': e
+                  '2': 'n'
+                  '3': s
+                  '4': o
+                  '5': r
+                  '6': .
+                  '7': p
+                  '8': o
+                  '9': w
+                  '10': e
+                  '11': r
+                  '12': s
+                  '13': t
+                  '14': r
+                  '15': e
+                  '16': a
+                  '17': m
+                  '18': _
+                  '19': h
+                  '20': w
+                  '21': '5'
+                  '22': '1'
+                  '23': z
+                  '24': o
+                  '25': h
+                  '26': '4'
+                  '27': s
+                  '28': f
+                  '29': '5'
+                  '30': '8'
+                  '31': '4'
+                  '32': '7'
+                  '33': '6'
+                  '34': '0'
+                  '35': _
+                  '36': b
+                  '37': a
+                  '38': t
+                  '39': t
+                  '40': e
+                  '41': r
+                  '42': 'y'
+                  '43': _
+                  '44': i
+                  '45': 'n'
+                  '46': p
+                  '47': u
+                  '48': t
+                  '49': _
+                  '50': w
+                  '51': a
+                  '52': t
+                  '53': t
+                  '54': s
+                  consumption: sensor.powerstream_hw51zoh4sf584760_battery_op_potential
+                  production: sensor.powerstream_hw51zoh4sf584760_battery_input_watts
+                state_of_charge: sensor.powerstream_hw51zoh4sf584760_battery_charge
+              grid:
+                secondary_info: {}
+                entity: sensor.tasmota_gs303_power_cur
+              solar:
+                entity: sensor.powerstream_hw51zoh4sf584760_solar_1_watts
+                display_zero_state: true
+                secondary_info: {}
+              home:
+                secondary_info: {}
+            clickable_entities: true
+            display_zero_lines: true
+            use_new_flow_rate_model: true
+            w_decimals: 0
+            kw_decimals: 1
+            min_flow_rate: 0.75
+            max_flow_rate: 6
+            max_expected_power: 2000
+            min_expected_power: 0.01
+            watt_threshold: 1000
+            transparency_zero_lines: 0
+            sort_individual_devices: false
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
+            heading: EcoFlow
+          - graph: line
+            type: sensor
+            entity: sensor.powerstream_hw51zoh4sf584760_solar_1_watts
+            detail: 2
+            name: Solar panel 1
+            grid_options:
+              columns: 6
+              rows: 2
+          - graph: line
+            type: sensor
+            detail: 2
+            entity: sensor.powerstream_hw51zoh4sf584760_battery_charge
+            name: Battery Charge
+          - graph: none
+            type: sensor
+            entity: sensor.powerstream_hw51zoh4sf584760_charge_time
+            detail: 2
+            name: Charge till full
+          - graph: none
+            type: sensor
+            entity: sensor.powerstream_hw51zoh4sf584760_discharge_time
+            detail: 2
+            name: Discharge till empty
+          - type: entities
+            entities:
+              - entity: select.powerstream_hw51zoh4sf584760_power_supply_mode
+            title: EcoFlow Prioritize
+            show_header_toggle: true
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
+            heading: Plugs, Forcast, Energy Meter
+          - show_name: true
+            show_icon: true
+            type: button
+            entity: switch.shellyplugsg3_8cbfea9123a0_switch_0
+            name: ShellyPlug
+          - type: entity
+            entity: sensor.stromgedacht_status_code
+            name: StromGedacht
+            icon: mdi:sun-wireless
+            grid_options:
+              rows: 2
+              columns: 6
+          - graph: line
+            type: sensor
+            detail: 2
+            grid_options:
+              columns: full
+              rows: 2
+            entity: sensor.tasmota_gs303_power_cur
+            name: Energy Meter Watt
