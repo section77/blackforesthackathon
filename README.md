@@ -62,7 +62,9 @@ MVP
 
 future improvements
 - create a more generic solution, that is independent of HomeAssistant
-- use APIs that provide a CO2 index and energy flow like [Grünstromindex](https://gruenstromindex.de/assets/js/)(preferred) or [Energy Charts](https://energy-charts.info/api.html?l=de&c=DE)
+- use APIs that provide a CO2 index and energy flow like 
+  - [Grünstromindex](https://gruenstromindex.de/assets/js/)(preferred)
+  - [Energy Charts](https://energy-charts.info/api.html?l=de&c=DE)
 - Add more sophisticated prediction models e.g. AC charging, forecast with nonlinear-optimization algorithm and intraday optimization.
 
 Hurdles
