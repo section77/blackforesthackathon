@@ -2,7 +2,8 @@
 Repo for Code and Docs around the #blackforesthackathon 2025
 
 documentation
-- [general](https://balkon.solar/dateien)
+- [Presentation](https://new.express.adobe.com/publishedV2/urn:aaid:sc:EU:c7f514e3-6e40-4c48-baa8-d4dd70234a42?promoid=Y69SGM5H&mv=other)
+- [General](https://balkon.solar/dateien)
 - HomeAssistant specific
   - how to install integrations
     - integration "Forecast.Solar"
