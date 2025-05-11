@@ -41,9 +41,9 @@ documentation
     - optimized buffer use (to be included in the control):
         The charging and discharging process should be carried out as follows: At midnight, the battery storage system should be half charged so that it can serve the load until the start of the day. After sunrise, solar production quickly exceeds the load and the storage system, which is empty at this point, is gradually charged. If the daily yield corresponds to the annual average, the battery storage is filled to its capacity limit by the surplus electricity at sunset. On very high-yield days, the additional surplus electricity must be curtailed or utilised elsewhere once the capacity limit is exceeded. After darkness falls, the load is covered by the discharging current. At midnight, the battery is exactly half charged again and the cycle can begin anew. On low-yield days, the battery is only charged to a fraction of its capacity. The daily balance is negative and in this case must be compensated for by residual power plants or load reductions.
     - predictions are driven by parameters in sensors (Stromgedach, Forecast.Solar, and Historical Power Consumption*)
-    * Check balance-sensors.md
+    * Check balance-sensors.md & see photos/mindmap{1,2,3}.png
 
-tools
+# tools
 - [HomeAssistant](https://www.home-assistant.io/)
   - [documentation for download](https://www.home-assistant.io/installation/raspberrypi#downloading-the-home-assistant-image)
 - [StromGedacht API endpoint for Freiburg](https://api.stromgedacht.de/v1/now?zip=79110)
@@ -52,23 +52,39 @@ tools
 - [Solar energy prediction](https://openweathermap.org/api/solar-energy-prediction)
 - [Meteoblue API](https://content.meteoblue.com/de/unternehmensloesungen/wetter-apis)
 
-hardware for prosumers
+<details>
+
+<summary>Dashboard in DARK theme</summary>
+
+![](./screenshot-dark.png)
+
+</details>
+
+<details>
+
+<summary>Dashboard in LIGHT theme</summary>
+
+![](./screenshot-light.png)
+
+</details>
+
+# hardware for prosumers
 - Rasperry Pi
 - Radio-controlled sockets
 - [Optical Readout Head for Smartmeter](https://www.ebay.de/sch/i.html?_nkw=hichi&_odkw=hitchi)
 
-MVP
+## MVP
 - HomeAssistant (HassOS)
 - RaspberryPi
 
-future improvements
+### future improvements
 - create a more generic solution, that is independent of HomeAssistant
 - use APIs that provide a CO2 index and energy flow like 
   - [Grünstromindex](https://gruenstromindex.de/assets/js/)(preferred)
   - [Energy Charts](https://energy-charts.info/api.html?l=de&c=DE)
 - Add more sophisticated prediction models e.g. AC charging, forecast with nonlinear-optimization algorithm and intraday optimization.
 
-Hurdles
+#### Hurdles
 - access to the ecoflow api
   - requires a developer account; activation takes a few days
   - registration is tricky (codes valid for 1 minute only, mail takes around 1 minute)
