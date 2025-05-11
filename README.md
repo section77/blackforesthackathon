@@ -38,7 +38,7 @@
     - optimized buffer use (to be included in the control):
         The charging and discharging process should be carried out as follows: At midnight, the battery storage system should be half charged so that it can serve the load until the start of the day. After sunrise, solar production quickly exceeds the load and the storage system, which is empty at this point, is gradually charged. If the daily yield corresponds to the annual average, the battery storage is filled to its capacity limit by the surplus electricity at sunset. On very high-yield days, the additional surplus electricity must be curtailed or utilised elsewhere once the capacity limit is exceeded. After darkness falls, the load is covered by the discharging current. At midnight, the battery is exactly half charged again and the cycle can begin anew. On low-yield days, the battery is only charged to a fraction of its capacity. The daily balance is negative and in this case must be compensated for by residual power plants or load reductions.
     - predictions are driven by parameters in sensors (Stromgedach, Forecast.Solar, and Historical Power Consumption*)
-    * Check balance-sensors.md & see photos/mindmap{1,2,3}.png
+    * Check [balance-sensors.md](./balance-sensors.md) & see photos/mindmap{1,2,3}.png
 
 # tools
 - [HomeAssistant](https://www.home-assistant.io/)
