@@ -1,7 +1,4 @@
-# blackforesthackathon
-Repo for Code and Docs around the #blackforesthackathon 2025
-
-documentation
+# docs
 - [Presentation](https://new.express.adobe.com/id/urn:aaid:sc:EU:eb22591b-47b1-543f-af10-bcdc7bdd499b?invite=true&accept=true&promoid=YXPZFV9S&mv=other)
 - HomeAssistant specific
   - how to install integrations
