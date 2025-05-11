@@ -28,16 +28,16 @@ open-source accessibility, and clear documentation to ensure widespread adoption
 On the basis of readily avaible components (cheap off the shelf hardware like Raspberry Pi, optical readout head, smart sockets, ...) and open source software (HomeAssistant, Tasmota, ...) we have created a solution that tightly integrates into HomeAssistant (HomeAssistant integration) and is easy to install even for a less tech-savy user.
 
 ## Installation steps
-- download HomeAssistant SD card image
-- install on SD card
+- download HomeAssistant SD card image and install on SD card [for Raspberry Pi](https://www.home-assistant.io/installation/raspberrypi)
 - start HomeAssistant and do basic configuration
 - install integrations for the components
   - Mosquitto MQTT broker 
-  - HACS (HomeAssistant Community Store)
-  - EcoFlowCloud
-  - Power Flow Card Plus
-- install the integration from the directory code/custom_components/basosmart-integration/
-- install the blueprint basosmart-blueprint.yaml
+  - [HACS (HomeAssistant Community Store)](https://hacs.xyz/docs/use/)
+    - EcoFlowCloud
+      NOTE: we had to use `v1.3.0-beta4`, the HA interface allows picking betas or any git tag at its '...' menu.
+    - Power Flow Card Plus
+- install the integration from the directory `code/custom_components/basosmart-integration/`
+- install the blueprint `basosmart-blueprint.yaml`
 - configure and save blueprint and fill in the data:
   - PV Peak power of your PV system
   - ZIP code of your location
