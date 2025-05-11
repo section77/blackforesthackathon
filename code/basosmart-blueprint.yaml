@@ -1,0 +1,35 @@
+blueprint:
+  name: Decide on where the energy should go
+  description: With this blueprint you can decide whether excess energy should go to the grid or to the battery
+  domain: automation
+  input:
+    pv_peak_power:
+      name: PV peak power (in Watts)
+      description: Enter the total peak power of your PV system
+    zip_code:
+      name: ZIP code
+      description: Enter your local zip code
+    geo_lat:
+      name: Latitude of your geo position (eg Freiburg iBr=47.9873)
+    geo_lon:
+      name: Longitude of your geo position (eg Freiburg iBr=7.7536)
+    geo_dec:
+      name: Angle the PV system is placed at (0=vertical, 90=horizontal)
+    azimuth:
+      name: Alignment of the PV system (N/E/S/W; 0=south, 90=west)
+
+triggers:
+  - trigger: state
+    entity_id: !input pv_peak_power
+  - trigger: state
+    entity_id: !input zip_code
+  - trigger: state
+    entity_id: !input geo_lat
+  - trigger: state
+    entity_id: !input geo_lon
+  - trigger: state
+    entity_id: !input geo_dec
+  - trigger: state
+    entity_id: !input azimuth
+
+actions:
