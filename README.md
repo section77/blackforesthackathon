@@ -34,7 +34,6 @@ On the basis of readily avaible components (cheap off the shelf hardware like Ra
   - Mosquitto MQTT broker 
   - [HACS (HomeAssistant Community Store)](https://hacs.xyz/docs/use/)
     - EcoFlowCloud
-      NOTE: we had to use `v1.3.0-beta4`, the HA interface allows picking betas or any git tag at its '...' menu.
     - Power Flow Card Plus
 - install the integration from the directory `code/custom_components/basosmart-integration/`
 - install the blueprint `basosmart-blueprint.yaml`
@@ -122,6 +121,7 @@ On the basis of readily avaible components (cheap off the shelf hardware like Ra
 - Add more sophisticated prediction models e.g. AC charging, forecast with nonlinear-optimization algorithm and intraday optimization.
 
 ## Hurdles
+- EcoFlowCloud plugin had a bug, switched over to `v1.3.0-beta4` (the HA interface allows picking betas or any git tag at its '...' menu.)
 - access to the ecoflow api not provided
   - requires a developer account; activation takes a few days
   - registration is tricky (codes valid for 1 minute only, mail takes around 1 minute)
