@@ -69,6 +69,12 @@
 - [Solar energy prediction](https://openweathermap.org/api/solar-energy-prediction)
 - [Meteoblue API](https://content.meteoblue.com/de/unternehmensloesungen/wetter-apis)
 
+### Integrations from HACS
+
+- ecoflow cloud
+- powerflow card plus
+
+
 # hardware for prosumers
 - Rasperry Pi
 - Radio-controlled sockets
