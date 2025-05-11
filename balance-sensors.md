@@ -1,3 +1,9 @@
+<!--
+BaSoSmart.entities.txt
+^allows to see appliances names, we had to rename all in 'Settings > Devices' first and foremost
+https://github.com/home-assistant/home-assistant-notebooks/blob/master/GETTING_STARTED.ipynb
+-->
+
 # Sensor
 
 ## Template Sensors
