@@ -21,7 +21,9 @@ open-source accessibility, and clear documentation to ensure widespread adoption
 - [DrR00T90](https://github.com/DrR00T90)
 - [Justin Otherguy](https://github.com/justinotherguy)
 - [Yannick Minet](https://github.com/minetman)
+- [EtikettierJuergen](https://chaos.social/@justinotherguy/114483033539956358)
 
+# our solution: baso-smart
 ## Brief description of the solution
 On the basis of readily avaible components (cheap off the shelf hardware like Raspberry Pi, optical readout head, smart sockets, ...) and open source software (HomeAssistant, Tasmota, ...) we have created a solution that tightly integrates into HomeAssistant (HomeAssistant integration) and is easy to install even for a less tech-savy user.
 
@@ -88,7 +90,7 @@ On the basis of readily avaible components (cheap off the shelf hardware like Ra
   - predictions are driven by parameters in sensors (Stromgedach, Forecast.Solar, and Historical Power Consumption*)
     * Check [balance-sensors.md](./balance-sensors.md) & see photos/mindmap{1,2,3}.png
 
-## tools
+## software 
   - [HomeAssistant](https://www.home-assistant.io/)
     - [documentation for download](https://www.home-assistant.io/installation/raspberrypi#downloading-the-home-assistant-image)
   - [StromGedacht API endpoint for Freiburg](https://api.stromgedacht.de/v1/now?zip=79110)
