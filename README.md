@@ -15,12 +15,12 @@ This repo contains the output of team section77 at the #blackforesthackathon in 
 open-source accessibility, and clear documentation to ensure widespread adoption and usability.
 
 ## Team members
-[Protea-Wolkenfee](https://github.com/Protea-Wolkenfee)
-[Jana](https://github.com/jaaana)
-[A.s.](https://github.com/adRn-s)
-[DrR00T90](https://github.com/DrR00T90)
-[Justin Otherguy](https://github.com/justinotherguy)
-[Yannick Minet](https://github.com/minetman)
+- [Protea-Wolkenfee](https://github.com/Protea-Wolkenfee)
+- [Jana](https://github.com/jaaana)
+- [A.s.](https://github.com/adRn-s)
+- [DrR00T90](https://github.com/DrR00T90)
+- [Justin Otherguy](https://github.com/justinotherguy)
+- [Yannick Minet](https://github.com/minetman)
 
 ## Brief description of the solution
 On the basis of readily avaible components (cheap off the shelf hardware like Raspberry Pi, optical readout head, smart sockets, ...) and open source software (HomeAssistant, Tasmota, ...) we have created a solution that tightly integrates into HomeAssistant (HomeAssistant integration) and is easy to install even for a less tech-savy user.
